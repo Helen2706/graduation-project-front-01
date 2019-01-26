@@ -3,6 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import 'jquery/dist/jquery.min'
+import 'bootstrap/dist/js/bootstrap.min.js'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import college from './components/college-website'
 
 Vue.config.productionTip = false
