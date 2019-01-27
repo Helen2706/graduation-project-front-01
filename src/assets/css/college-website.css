@@ -86,10 +86,33 @@
 }
 
 .page {
+  min-width: 1200px;
   width: 80%;
   margin: 0 auto;
   background-color: blue;
-  height: 600px;
+  min-height: 600px;
+}
+.page .container{
+  width: 100%;
+  height: 500px;
+}
+.page img{
+  width: 100%;
+  height: 500px;
+}
+.page .carousel-caption{
+  bottom: 60px;
+  background-color: rgba(33,33,33,0.8);
+  height: 40px;
+}
+.page .carousel-caption h4{
+  font-size: 20px;
+  line-height: 40px;
+
+}
+.page .carousel-indicators{
+  left: 44%;
+  width: 12%;
 }
 
 .footer {

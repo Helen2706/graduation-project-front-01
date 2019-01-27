@@ -45,7 +45,60 @@
         </nav>
       </div>
     </div>
-    <div class="page"></div>
+    <div class="page">
+      <div class="container">
+        <div class="row clearfix">
+          <div class="col-md-12 column">
+            <div class="carousel slide" id="carousel-837124">
+              <ol class="carousel-indicators">
+                <li class="active" data-slide-to="0" data-target="#carousel-837124">
+                </li>
+                <li data-slide-to="1" data-target="#carousel-837124">
+                </li>
+                <li data-slide-to="2" data-target="#carousel-837124">
+                </li>
+                <li data-slide-to="3" data-target="#carousel-837124">
+                </li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img alt="" src="../assets/image/轮播图1.png" />
+                  <div class="carousel-caption">
+                    <h4>
+                      “实践中的马克思主义新闻观”喜获国家级教学成果一等奖 新闻传播教育取得历史性突破
+                    </h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <img alt="" src="../assets/image/轮播图2.jpeg" />
+                  <div class="carousel-caption">
+                    <h4>
+                      首届电视学院学生教学成果奖展示暨评审活动成功举办
+                    </h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <img alt="" src="../assets/image/轮播图3.png" />
+                  <div class="carousel-caption">
+                    <h4>
+                      2018年度电视学院团学组织年终述职大会顺利召开
+                    </h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <img alt="" src="../assets/image/轮播图4.jpg" />
+                  <div class="carousel-caption">
+                    <h4>
+                      2018-2022年新闻传播学类专业教指委第一次会议隆重召开
+                    </h4>
+                  </div>
+                </div>
+              </div> <a class="left carousel-control" href="#carousel-837124" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-837124" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
     <div class="footer"></div>
   </div>
 </template>
@@ -54,6 +107,7 @@
   export default {
     name: "college-website"
   }
+  $('#myCarousel').carousel('pause')
 </script>
 
 <style scoped>
