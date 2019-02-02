@@ -107,7 +107,9 @@
   export default {
     name: "college-website"
   }
-  $('#myCarousel').carousel('pause')
+  $('#carousel-837124').carousel({
+    interval: 2000
+  })
 </script>
 
 <style scoped>
