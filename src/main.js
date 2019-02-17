@@ -3,6 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+/*注册axios组件*/
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+Vue.use(VueAxios,axios)
+
 import 'jquery/dist/jquery.min'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -15,5 +20,5 @@ new Vue({
   el: '#app',
   router,
   components: { App,college },
-  template: '<college/>'
+  template: '<App/>'
 })

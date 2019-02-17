@@ -13,8 +13,8 @@
       <div class="second-title">传播研究院</div>
       <div class="search-box">
         <div class="relative">
-        <input type="text" placeholder="  关键字" name="keyword" class="form-control keyword">
-        <input type="button" value="搜索" class="btn btn-default btn search-button">
+          <input type="text" placeholder="  关键字" name="keyword" class="form-control keyword">
+          <input type="button" value="搜索" class="btn btn-default btn search-button">
         </div>
       </div>
       <!--导航栏-->
@@ -62,7 +62,7 @@
               </ol>
               <div class="carousel-inner">
                 <div class="item active">
-                  <img alt="" src="../assets/image/轮播图1.png" />
+                  <img alt="" src="../assets/image/轮播图1.png"/>
                   <div class="carousel-caption">
                     <h4>
                       “实践中的马克思主义新闻观”喜获国家级教学成果一等奖 新闻传播教育取得历史性突破
@@ -70,7 +70,7 @@
                   </div>
                 </div>
                 <div class="item">
-                  <img alt="" src="../assets/image/轮播图2.jpeg" />
+                  <img alt="" src="../assets/image/轮播图2.jpeg"/>
                   <div class="carousel-caption">
                     <h4>
                       首届电视学院学生教学成果奖展示暨评审活动成功举办
@@ -78,7 +78,7 @@
                   </div>
                 </div>
                 <div class="item">
-                  <img alt="" src="../assets/image/轮播图3.png" />
+                  <img alt="" src="../assets/image/轮播图3.png"/>
                   <div class="carousel-caption">
                     <h4>
                       2018年度电视学院团学组织年终述职大会顺利召开
@@ -86,30 +86,67 @@
                   </div>
                 </div>
                 <div class="item">
-                  <img alt="" src="../assets/image/轮播图4.jpg" />
+                  <img alt="" src="../assets/image/轮播图4.jpg"/>
                   <div class="carousel-caption">
                     <h4>
                       2018-2022年新闻传播学类专业教指委第一次会议隆重召开
                     </h4>
                   </div>
                 </div>
-              </div> <a class="left carousel-control" href="#carousel-837124" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-837124" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+              </div>
+              <a class="left carousel-control" href="#carousel-837124" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-837124" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
             </div>
+
           </div>
         </div>
       </div>
-   </div>
+      <div id="articleList">
+        <div class="article_title">
+          <span>
+            <a href="#">
+              <span>
+                <img src="../assets/image/more.jpg"/>
+              </span>
+            </a>
+          </span>
+          <h2>研究院新闻</h2>
+        </div>
+        <div>
+          <ul>
+            <li v-for="article in articles">
+              <a href="#">{{article.title}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="footer"></div>
   </div>
 </template>
 
 <script>
   export default {
-    name: "college-website"
+    name: "college-website",
+    data(){
+      return{
+        articles: [
+          {title: '外交部“非洲英语国家媒体学者访华团”项目启动仪式在我校举行'},
+          {title: '外交部“非洲英语国家媒体学者访华团”项目启动仪式在我校举行'},
+          {title: '外交部“非洲英语国家媒体学者访华团”项目启动仪式在我校举行'}
+        ]
+      }
+    },
+    mounted(){
+      this.axios.post('http://localhost:8088/all/article').then(body=>{
+        this.articles = body.data;
+      });
+    }
   }
-  $('#carousel-837124').carousel({
-    interval: 2000
-  })
 </script>
 
 <style scoped>

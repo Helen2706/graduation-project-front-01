@@ -1,7 +1,13 @@
 * {
-   margin: 0;
-   padding: 0;
- }
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none
+}
 
 .header {
   min-width: 1200px;
@@ -33,12 +39,12 @@
   padding-top: 20px;
 }
 
-.header .first-title .middle-title{
+.header .first-title .middle-title {
   font-size: 35px;
 }
 
-.header .string{
-  float:left;
+.header .string {
+  float: left;
   width: 2px;
   height: 80px;
   background: #000;
@@ -50,37 +56,45 @@
   float: left;
   line-height: 160px;
 }
-.header .search-box{
-  float:right;
+
+.header .search-box {
+  float: right;
   width: 300px;
   height: 50px;
 }
-.header .search-box .form-control{
+
+.header .search-box .form-control {
   width: 80%;
   display: inline-block;
 }
-.header .search-box .search-button{
+
+.header .search-box .search-button {
   position: absolute;
   right: 5px;
-  top:65px;
+  top: 65px;
 }
-.header .search-box .keyword{
+
+.header .search-box .keyword {
   margin-top: 60px;
 }
-.header .search-box .relative{
+
+.header .search-box .relative {
   position: relative;
 }
+
 /*导航条相关样式*/
-.header .navigation{
-  height:60px;
-  clear:both;
+.header .navigation {
+  height: 60px;
+  clear: both;
 }
+
 /*导航的宽度站80%*/
-.navigation .container-fluid{
+.navigation .container-fluid {
   width: 80%;
   margin: 0 auto;
 }
-.nav>li>a{
+
+.nav > li > a {
   font-size: 20px;
   color: #444;
 }
@@ -92,27 +106,66 @@
   background-color: blue;
   min-height: 600px;
 }
-.page .container{
+
+.page .container {
   width: 100%;
   height: 500px;
 }
-.page img{
+
+.page img {
   width: 100%;
   height: 500px;
 }
-.page .carousel-caption{
+
+.page .carousel-caption {
   bottom: 60px;
-  background-color: rgba(33,33,33,0.8);
+  background-color: rgba(33, 33, 33, 0.8);
   height: 40px;
 }
-.page .carousel-caption h4{
+
+.page .carousel-caption h4 {
   font-size: 20px;
   line-height: 40px;
 
 }
-.page .carousel-indicators{
+
+.page .carousel-indicators {
   left: 44%;
   width: 12%;
+}
+
+.page #articleList {
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+}
+
+.page .article_title {
+  height: 70px;
+  line-height: 70px;
+  border-bottom: 2px solid #064e9e;
+}
+
+.page .article_title > span {
+  float: right;
+  margin-top: 8px;
+}
+
+.page .article_title img {
+  width: 60px;
+  height: 26px;
+}
+
+.page .article_title h2 {
+  line-height: 70px;
+}
+.page #articleList li{
+  width: 480px;
+  height: 60px;
+  line-height: 60px;
+  margin: 10px;
+  border-bottom: 2px dashed #064e9e;
+  box-sizing: inherit;
 }
 
 .footer {
